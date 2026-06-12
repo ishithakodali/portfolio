@@ -1,0 +1,50 @@
+.aeon-case {
+  background-color: #a75b89;
+  padding: var(--space-xl) 0;
+  margin-top: 0;
+  color: #F4F1EA; /* Using the light background color for better text contrast */
+}
+
+.aeon-case .brand-case-text p,
+.aeon-case .brand-case-title {
+  color: #F4F1EA;
+}
+
+.aeon-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-md);
+  margin-top: var(--space-md);
+}
+
+.aeon-grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.aeon-item {
+  width: 100%;
+}
+
+.aeon-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid rgba(48, 42, 39, 0.05);
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.aeon-img:hover {
+  transform: scale(0.98);
+}
+
+@media (max-width: 1024px) {
+  .aeon-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .aeon-grid {
+    grid-template-columns: 1fr;
+  }
+}
