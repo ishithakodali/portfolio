@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Instrument+Serif:ital@0;1&display=swap');
 
 :root {
-  --bg-color: #F4F1EA;
-  --bg-color-alt: #EBE7DF;
-  --text-color: #302A27;
+  --bg-color: #FAF4F0;
+  --bg-color-alt: #F3E3D6;
+  --text-color: #4A2B1D; /* Warm dark brown for readability */
   --accent-sage: #9EAC9B;
-  --accent-terracotta: #D9A098;
-  --accent-lavender: #BDB6C2;
-  --accent-ochre: #D6B582;
-  --accent-pop: #FFDAB9; /* Peach pop */
+  --accent-terracotta: #E66A2A; /* Bright sunset orange */
+  --accent-lavender: #D15E2D; /* Replaced with another warm orange shade */
+  --accent-ochre: #F9B277;
+  --accent-pop: #FFDAB9;
   
   --font-serif: 'Instrument Serif', serif;
   --font-sans: 'DM Sans', sans-serif;

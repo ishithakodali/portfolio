@@ -1,5 +1,6 @@
 import './BrandIdentity.css';
 import Aeon from './Aeon';
+import BeyondSunset from './BeyondSunset';
 
 export default function BrandIdentity() {
   return (
@@ -13,6 +14,7 @@ export default function BrandIdentity() {
 
       <div className="brand-cases">
         <Aeon />
+        <BeyondSunset />
       </div>
     </section>
   );

@@ -1,0 +1,40 @@
+/* Hide default cursor globally on desktop if desired, but user didn't explicitly ask to hide it. Often we leave default cursor and add follower. */
+/* body { cursor: none; } */
+
+.custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  
+  /* Glassmorphism look */
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  
+  /* Drop shadow for depth */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+
+  pointer-events: none;
+  z-index: 999999;
+  
+  /* Transition for hover state scaling and color */
+  transition: width 0.3s cubic-bezier(0.25, 1, 0.5, 1), 
+              height 0.3s cubic-bezier(0.25, 1, 0.5, 1), 
+              background 0.3s ease,
+              border 0.3s ease;
+  
+  /* Will-change for performance */
+  will-change: transform;
+}
+
+/* Hover State */
+.custom-cursor.cursor-hover {
+  width: 54px; /* 1.5x scale */
+  height: 54px;
+  background: rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}

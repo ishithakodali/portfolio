@@ -1,13 +1,16 @@
 .aeon-case {
-  background-color: #a75b89;
-  padding: var(--space-xl) 0;
+  background-color: transparent; /* Inherits global background */
+  padding: var(--space-md) 0 var(--space-xl) 0; /* Reduced top padding to pull it closer to heading */
   margin-top: 0;
-  color: #F4F1EA; /* Using the light background color for better text contrast */
+  color: var(--text-color);
 }
 
-.aeon-case .brand-case-text p,
+.aeon-case .brand-case-text p {
+  color: var(--text-color);
+}
+
 .aeon-case .brand-case-title {
-  color: #F4F1EA;
+  color: #4c2969; /* Custom purple heading color */
 }
 
 .aeon-grid {
@@ -19,6 +22,26 @@
 
 .aeon-grid-3 {
   grid-template-columns: repeat(3, 1fr);
+}
+
+.aeon-grid-banners {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-md);
+  margin-top: var(--space-md);
+}
+
+.aeon-grid-banners .aeon-item {
+  width: 28%; /* Keeps them smaller while spacing them out */
+}
+
+@media (max-width: 768px) {
+  .aeon-grid-banners {
+    flex-direction: column;
+  }
+  .aeon-grid-banners .aeon-item {
+    width: 100%;
+  }
 }
 
 .aeon-item {

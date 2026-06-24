@@ -26,32 +26,57 @@ export default function Aeon() {
     { id: 19, src: '/aeon/media__1781255186867.png' },
   ];
 
+  const imagesRow3 = [
+    { id: 20, src: '/aeon/posts%201.png' },
+    { id: 21, src: '/aeon/posts%202.png' },
+    { id: 22, src: '/aeon/posts%203.png' },
+  ];
+
   return (
     <article className="brand-case aeon-case" id="aeon">
       <div className="container">
-        <div className="brand-case-content" style={{ paddingBottom: 'var(--space-lg)' }}>
+        <div className="brand-case-content" style={{ paddingBottom: 'var(--space-sm)' }}>
           <h3 className="serif brand-case-title">Aeon 2026</h3>
           <div className="brand-case-text">
             <p>
               A comprehensive visual identity and collateral system for the Aeon 2026 event. 
-              The project involved creating a cohesive design language spanning ID cards, mini banners, and environmental posters, leaning into an industrial, slightly futuristic aesthetic.
+              The project involved creating a cohesive design language spanning ID cards, mini banners, and environmental posters, leaning into an industrial, slightly futuristic aesthetic. @aeon.mu on instagram.
             </p>
           </div>
         </div>
-        <div className="aeon-grid">
-          {images.map((img) => (
-            <div key={img.id} className="aeon-item">
-              <img src={img.src} alt={`Aeon 2026 collateral ${img.id}`} className="aeon-img" />
-            </div>
-          ))}
+        <div style={{ marginTop: 'var(--space-sm)' }}>
+          <p className="text-util" style={{ marginBottom: 'var(--space-sm)' }}>ID cards</p>
+          <div className="aeon-grid">
+            {images.map((img) => (
+              <div key={img.id} className="aeon-item">
+                <img src={img.src} alt={`Aeon 2026 ID card ${img.id}`} className="aeon-img" />
+              </div>
+            ))}
+          </div>
         </div>
-        <div className="aeon-grid aeon-grid-3">
-          {imagesRow2.map((img) => (
-            <div key={img.id} className="aeon-item">
-              <img src={img.src} alt={`Aeon 2026 collateral ${img.id}`} className="aeon-img" />
-            </div>
-          ))}
+
+        <div style={{ marginTop: 'var(--space-2xl)' }}>
+          <p className="text-util" style={{ marginBottom: 'var(--space-sm)' }}>Some banners</p>
+          <div className="aeon-grid-banners">
+            {imagesRow2.map((img) => (
+              <div key={img.id} className="aeon-item">
+                <img src={img.src} alt={`Aeon 2026 banner ${img.id}`} className="aeon-img" />
+              </div>
+            ))}
+          </div>
         </div>
+        
+        <div style={{ marginTop: 'var(--space-2xl)' }}>
+          <p className="text-util" style={{ marginBottom: 'var(--space-sm)' }}>Some instagram posts</p>
+          <div className="aeon-grid aeon-grid-3">
+            {imagesRow3.map((img) => (
+              <div key={img.id} className="aeon-item">
+                <img src={img.src} alt={`Aeon 2026 Instagram post ${img.id}`} className="aeon-img" />
+              </div>
+            ))}
+          </div>
+        </div>
+
       </div>
     </article>
   );

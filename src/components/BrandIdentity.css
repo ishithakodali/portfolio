@@ -1,9 +1,10 @@
 .brand-section {
   padding: var(--space-xl) 0 var(--space-xl) 0;
+  border-top: 1px solid rgba(74, 43, 29, 0.2); /* Divider line */
 }
 
 .brand-header {
-  margin-bottom: var(--space-xl);
+  margin-bottom: var(--space-md);
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -12,7 +13,7 @@
 }
 
 .brand-case {
-  margin-bottom: var(--space-2xl);
+  margin-bottom: var(--space-md);
 }
 
 .brand-full-bleed {
