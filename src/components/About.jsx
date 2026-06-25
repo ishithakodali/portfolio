@@ -25,7 +25,7 @@ export default function About() {
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             <h2 className="serif about-quote-text text-huge">
-              I am a graphic designer with a soft spot for <span className="italic" style={{color: '#d4aebd'}}>vintage textures</span> and visual storytelling.
+              I am a graphic designer<br/>with a soft spot for<br/><span className="italic" style={{color: '#d4aebd'}}>vintage textures</span> and<br/>visual storytelling.
             </h2>
             <div className="about-util-text">
               <p className="text-util">Based in Hyderabad</p>

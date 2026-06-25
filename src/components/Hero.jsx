@@ -24,7 +24,7 @@ export default function Hero() {
           </div>
 
           <div className="col-span-4 hero-subtitle-block">
-            <h6 className="text-util">making posters,<br/>brands & pretty things.</h6>
+            <h6 className="text-util">Crafting thoughtful brands,<br/>interfaces & visual stories.</h6>
           </div>
           
           <div className="col-span-4 col-start-9 hero-scroll-block">

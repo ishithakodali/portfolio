@@ -2,12 +2,13 @@
   min-height: 100vh;
   display: flex;
   align-items: center;
-  padding: var(--space-2xl) 0 var(--space-xl) 0;
+  padding: var(--space-2xl) 10% var(--space-xl) 10%; /* Added ~10% horizontal inset */
   background-color: var(--bg-color);
 }
 
 .hero-grid {
   align-items: end;
+  margin-top: -8vh; /* Shift content ~8% higher to sit closer to navbar */
 }
 
 .hero-title {
